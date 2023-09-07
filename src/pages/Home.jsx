@@ -86,7 +86,6 @@ const Home = () => {
         <UpcomingMovies upcomingMovies={upcomingMovies} />
         <PopularSeries popularSeries={popularSeries} />
       </section>
-      <Footer />
     </>
   );
 };

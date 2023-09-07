@@ -171,7 +171,7 @@ const MoviePage = () => {
           >
             {actors?.map((actor) => (
               <SwiperSlide key={actor.id}>
-                <ActorCard {...actor} />
+                <ActorCard actor={actor} />
               </SwiperSlide>
             ))}
           </Swiper>

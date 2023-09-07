@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 
 import { Navbar } from "../components";
 import { useState } from "react";
+import Footer from "../components/Footer";
 
 const RootLayout = () => {
   const [theme, setTheme] = useState("dark");
@@ -13,6 +14,7 @@ const RootLayout = () => {
       <main>
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 };

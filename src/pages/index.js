@@ -7,6 +7,7 @@ import TopRatedSeriesList from "./TopRatedSeriesList";
 import UpcomingMoviesList from "./UpcomingMoviesList";
 import PopularSeriesList from "./PopularSeriesList";
 import MoviePage from "./MoviePage";
+import ActorDetails from "./ActorDetails";
 
 export {
   Home,
@@ -18,4 +19,5 @@ export {
   UpcomingMoviesList,
   PopularSeriesList,
   MoviePage,
+  ActorDetails,
 };
