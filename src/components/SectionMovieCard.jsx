@@ -19,7 +19,7 @@ const SectionMovieCard = ({ movie }) => {
           alt="Poster"
           className="rounded-sm w-full h-[200px] brightness-[0.6] group-hover:brightness-[0.2]"
         />
-        <div className="absolute inset-0 p-5 space-y-2 font-vazir font-semibold">
+        <div className="absolute text-white inset-0 p-5 space-y-2 font-vazir font-semibold">
           <p className="text-lg line-clamp-1">{name || title}</p>
           <p>یک ساعت و ۵۰ دقیقه</p>
           <button className="flex items-center gap-2 bg-white text-primary px-4 py-2 rounded-md ">
@@ -27,7 +27,7 @@ const SectionMovieCard = ({ movie }) => {
             تماشا کنید
           </button>
         </div>
-        <div className="gap-2 absolute right-[50%] bottom-[-15px] hidden group-hover:flex">
+        <div className="gap-2 absolute right-[50%] bottom-[-15px] max-sm:flex sm:hidden sm:group-hover:flex">
           <AiOutlineShareAlt className="movie-page-icons" />
           <TbHeartPlus className="movie-page-icons" />
         </div>

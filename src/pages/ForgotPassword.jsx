@@ -11,10 +11,10 @@ const ForgotPassword = () => {
     <div className="flex items-center justify-center h-screen bg-signinBg2 bg-no-repeat bg-cover">
       <div className="max-w-7xl mx-auto pt-[50px] pb-4 items-center text-sm relative font-iransans dark:text-white max-sm:pr-10">
         <div className="bg-black bg-opacity-80 rounded-md w-[450px] px-4 py-8 space-y-4">
-          <p className="text-center font-semibold font-iransans text-3xl">
+          <p className="text-center font-semibold font-iransans text-3xl text-slate-200">
             بازیابی رمز عبور
           </p>
-          <p className="text-[12px]">
+          <p className="text-[12px] text-slate-200">
             برای بازیابی رمز عبور ایمیل خود را وارد نمایید.
           </p>
 
@@ -30,10 +30,10 @@ const ForgotPassword = () => {
               />
             </div>
             <div className="flex items-center justify-between mt-5 mb-8">
-              <Link to="/sign-in" className="text-[12px]">
+              <Link to="/sign-in" className="text-[12px] text-slate-200">
                 وارد شوید
               </Link>
-              <p className="text-[12px] ">
+              <p className="text-[12px] text-slate-200">
                 حساب ندارید؟{" "}
                 <Link to="/sign-up" className="text-orange-500">
                   ثبت نام{" "}
@@ -41,7 +41,7 @@ const ForgotPassword = () => {
               </p>
             </div>
             <button className="px-10 py-3.5 rounded-full bg-orange-500 text-slate-200 w-full font-iransans text-[16px] font-semibold">
-              ثبت نام
+              ارسال
             </button>
           </form>
         </div>

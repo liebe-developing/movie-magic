@@ -8,7 +8,7 @@ const ActorCard = ({ profile_path, name }) => {
         alt=""
         className="rounded-sm w-full h-[200px]"
       />
-      <h3 className="text-white text-center mt-3 font-semibold font-mono text-lg group-hover:text-orange-500">
+      <h3 className="dark:text-white text-primary tracking-tighter text-center mt-3 font-bold text-[17px] group-hover:text-orange-500 transition ease-in-out duration-200">
         {name}
       </h3>
     </div>

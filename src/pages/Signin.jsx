@@ -26,10 +26,12 @@ const Signin = () => {
     <div className="flex items-center justify-center h-screen bg-signinBg2 bg-no-repeat bg-cover">
       <div className="max-w-7xl mx-auto pt-[50px] pb-4 items-center text-sm relative font-iransans dark:text-white max-sm:pr-10">
         <div className="bg-black bg-opacity-80 rounded-md w-[450px] px-4 py-8 space-y-4">
-          <p className="text-center font-semibold font-iransans text-3xl">
+          <p className="text-center font-semibold font-iransans text-3xl text-slate-200">
             ورود به سایت
           </p>
-          <p className="text-[12px]">برای ورود به حساب کاربردی خود وارد شوید.</p>
+          <p className="text-[12px]">
+            برای ورود به حساب کاربردی خود وارد شوید.
+          </p>
 
           <form>
             <div className="relative flex items-center">
@@ -64,14 +66,14 @@ const Signin = () => {
                 />
               )}
             </div>
-            <div className="flex items-center justify-between mt-5 mb-8">
+            <div className="flex items-center justify-between mt-5 mb-8 ">
               <Link
                 to="/forgot-password"
                 className="text-[12px] text-orange-500"
               >
                 رمز عبور را فراموش کرده‌ام
               </Link>
-              <p className="text-[12px] ">
+              <p className="text-[12px] text-white">
                 حساب ندارید؟{" "}
                 <Link to="/sign-up" className="text-orange-500">
                   ثبت نام{" "}

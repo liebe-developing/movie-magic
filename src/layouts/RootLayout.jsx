@@ -1,23 +1,14 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 import { Navbar } from "../components";
+import { useState } from "react";
 
-const RootLayout = ({
-  trendingMovies,
-  topRatedMovies,
-  topRatedSeries,
-  upcomingMovies,
-  popularSeries,
-}) => {
+const RootLayout = () => {
+  const [theme, setTheme] = useState("dark");
+
   return (
-    <div className="relative dark">
-      <Navbar
-        trendingMovies={trendingMovies}
-        topRatedMovies={topRatedMovies}
-        topRatedSeries={topRatedMovies}
-        upcomingMovies={upcomingMovies}
-        popularSeries={popularSeries}
-      />
+    <div className={`relative ${theme ? "dark" : ""}`}>
+      <Navbar theme={theme} setTheme={setTheme} />
 
       <main>
         <Outlet />

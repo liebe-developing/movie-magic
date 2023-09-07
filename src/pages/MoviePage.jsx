@@ -78,7 +78,7 @@ const MoviePage = () => {
       <div
         className={`max-sm:flex flex-col sm:h-[700px] bg-no-repeat w-full bg-center bg-cover`}
         style={{
-          backgroundImage: `url(https://image.tmdb.org/t/p/original/${state?.backdrop_path})`,
+          backgroundImage: `url(https://image.tmdb.org/t/p/original/${state.backdrop_path})`,
         }}
       >
         <div className="flex flex-col md:flex-row px-[119px] h-auto pt-8 sm:h-[700px] backdrop-brightness-[0.4] gap-7">
@@ -142,7 +142,9 @@ const MoviePage = () => {
           </div>
         </div>
         <div className="bg-white dark:bg-[#060606] pt-16 ">
-          <h2 className="text-white font-semibold sm:px-[119px] text-2xl ">بازیگران</h2>
+          <h2 className="dark:text-white text-primary font-vazir font-semibold sm:px-[119px] text-2xl">
+            بازیگران
+          </h2>
           <Swiper
             navigation={true}
             loop

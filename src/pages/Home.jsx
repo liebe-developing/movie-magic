@@ -73,7 +73,7 @@ const Home = () => {
 
   return (
     <>
-      <section className="h-screen bg-white dark:bg-hero bg-center bg-cover bg-no-repeat bg-opacity-80 shadow-black">
+      <section className="h-screen light dark:bg-hero bg-center bg-cover bg-no-repeat bg-opacity-80 shadow-black">
         <Hero
           trendingMovies={trendingMovies}
           isLoading={isLoading}

@@ -8,11 +8,11 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   direction: rtl;
-  /* color-scheme: dark; */
 }
 .ltr {
   direction: ltr;
 }
+
 @font-face {
   font-family: IRANSans;
   src: url("./fonts/IRANSans.ttf") format("truetype");

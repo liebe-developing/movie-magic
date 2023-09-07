@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { styles } from "../styles";
 
-const DarkModeButton = () => {
-  const [theme, setTheme] = useState("light");
+const DarkModeButton = ({ theme, setTheme }) => {
+  /* const [theme, setTheme] = useState("light");
+   */
 
-  useEffect(() => {
+ /*  useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
-  }, [theme]);
+  }, [theme]); */
 
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
