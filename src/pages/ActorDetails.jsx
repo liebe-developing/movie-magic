@@ -14,15 +14,15 @@ const ActorDetails = () => {
 
   return (
     <section className={`h-auto w-full bg-white dark:bg-primary shadow-black`}>
-      <div className="flex flex-col max-w-7xl mx-auto pt-[100px] pb-4 text-sm relative font-iransans dark:text-white max-sm:pr-10">
-        <div className="flex items-center mb-10">
+      <div className="flex flex-col max-w-7xl mx-auto pt-[100px] pb-4 text-sm relative font-iransans dark:text-white">
+        <div className="flex items-center mb-10 max-sm:pr-10">
           <Link to={"/"}>مووی مجیک</Link>
           <RiArrowLeftSLine className="w-4 h-4" />
           <Link to={"#"}>بازیگرها</Link>
           <RiArrowLeftSLine className="w-4 h-4" />
           <p>{state.name}</p>
         </div>
-        <div className="flex gap-10">
+        <div className="flex max-sm:flex-col max-sm:items-center max-sm:justify-center gap-10">
           <img
             src={`https://image.tmdb.org/t/p/original/${state.profile_path}`}
             alt=""
@@ -58,7 +58,7 @@ const ActorDetails = () => {
           <div className="flex justify-center items-center mt-3">
             <div className="w-[1px] h-[1px] min-w-[80px] bg-orange-500" />
           </div>
-          <div className="grid grid-cols-2 gap-2 px-4 lg:px-0 lg:grid-cols-3 xl:grid-cols-4 md:gap-7 my-14">
+          <div className="grid grid-cols-2 gap-2 px-4 lg:px-0 lg:grid-cols-3 xl:grid-cols-4 md:gap-7 my-14 max-sm:gap-x-4 max-sm:gap-y-10">
             {state.known_for.map((movie) => (
               <SectionMovieCard key={movie.id} movie={movie} />
             ))}
