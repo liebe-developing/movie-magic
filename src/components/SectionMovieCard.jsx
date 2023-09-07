@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const SectionMovieCard = ({ movie }) => {
   const { poster_path, backdrop_path, name, title } = movie;
   return (
-    <Link to={`http://localhost:5173/${name || title}`} state={movie}>
+    <Link to={`/${name || title}`} state={movie}>
       <div className="relative rounded-xl group transition duration-700 ease-out transform hover:-translate-y-1 hover:scale-110">
         <img
           src={

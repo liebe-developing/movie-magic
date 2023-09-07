@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { IMDBLogo } from "../assets/icons";
 
 const HeroMovieCard = ({ movie }) => {
-  const { poster_path, original_title, vote_average } = movie;
+  const { poster_path, title, vote_average } = movie;
   return (
-    <Link to={`http://localhost:5173/${original_title}`} state={movie}>
+    <Link to={`/${title}`} state={movie}>
       <div className="relative w-full h-full rounded-xl drop-shadow-2xl group">
         <img
           src={
@@ -17,7 +17,7 @@ const HeroMovieCard = ({ movie }) => {
           className="w-full h-full rounded-xl transition ease-in-out duration-500 brightness-75"
         />
         <p className="absolute bottom-8 left-8 rounded-lg text-2xl font-bold text-zinc-50">
-          {original_title}
+          {title}
         </p>
         <div className="absolute bottom-16 left-8 flex flex-col items-end justify-end">
           <p className="text-slate-300 group-hover:text-white text-sm">
