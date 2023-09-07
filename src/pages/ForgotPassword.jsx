@@ -8,9 +8,9 @@ const ForgotPassword = () => {
   const handleSubmit = () => {};
 
   return (
-    <div className="flex items-center justify-center h-screen bg-signinBg2 bg-no-repeat bg-cover">
-      <div className="max-w-7xl mx-auto pt-[50px] pb-4 items-center text-sm relative font-iransans dark:text-white max-sm:pr-10">
-        <div className="bg-black bg-opacity-80 rounded-md w-[450px] px-4 py-8 space-y-4">
+    <div className="flex items-center justify-center h-screen bg-signinBg2 bg-no-repeat bg-cover max-sm:bg-center">
+      <div className="max-w-7xl mx-auto pt-[50px] pb-4 items-center text-sm relative font-iransans dark:text-white">
+        <div className="bg-black bg-opacity-80 rounded-md  w-full overflow-x-hidden sm:w-[450px] px-4 py-8 space-y-4">
           <p className="text-center font-semibold font-iransans text-3xl text-slate-200">
             بازیابی رمز عبور
           </p>

@@ -16,7 +16,7 @@ const HeroMovieCard = ({ movie }) => {
           alt="Poster"
           className="w-full h-full rounded-xl transition ease-in-out duration-500 brightness-75"
         />
-        <p className="absolute bottom-8 left-8 rounded-lg text-2xl font-bold text-zinc-50">
+        <p className="line-clamp-1 absolute bottom-8 left-8 rounded-lg text-2xl font-bold text-zinc-50">
           {title}
         </p>
         <div className="absolute bottom-16 left-8 flex flex-col items-end justify-end">

@@ -47,7 +47,7 @@ const Hero = ({ trendingMovies, isLoading, error }) => {
           {trendingMovies?.map((movie) => (
             <SwiperSlide
               key={movie.id}
-              className="bg-center bg-cover w-[700px] h-[590px]"
+              className="bg-center bg-cover sm:w-[700px] h-[590px]"
             >
               <HeroMovieCard movie={movie} />
             </SwiperSlide>
