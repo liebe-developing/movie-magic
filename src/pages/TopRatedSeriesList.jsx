@@ -13,10 +13,10 @@ const TopRatedSeriesList = () => {
 
   return (
     <section className="bg-white relative dark:bg-[#060606] text-primary dark:text-slate-200">
-      <div className="relative bg-moviePageBg bg-no-repeat bg-center bg-cover h-[380px]">
-        <div className="flex items-center justify-center  backdrop-brightness-[0.5] flex-col font-iransans h-full font-semibold">
+      <div className="relative bg-seriesPageBg bg-no-repeat bg-center bg-cover h-[450px]">
+        <div className="flex items-center justify-center  backdrop-brightness-[0.3] flex-col font-iransans h-full font-semibold">
           <p className="text-[3.157em] font-medium">همه سریال ها</p>
-          <div className="flex items-center mt-5 mx-12 text-sm text-orange-500">
+          <div className="flex items-center mt-2 mx-12 text-sm text-orange-500">
             <Link to={"/"}>صفحه اصلی</Link>
             <RiArrowLeftSLine className="w-5 h-5 mt-1" />
             <p>همه سریال ها</p>

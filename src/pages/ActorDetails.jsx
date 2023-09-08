@@ -52,7 +52,7 @@ const ActorDetails = () => {
             </div>
           </div>
         </div>
-        <div className="bg-gradient-to-r from-white via-gray-500 to-white dark:from-black dark:via-slate-400 dark:to-black w-full h-[1px] my-8" />
+        <div className="bg-gradient-to-r from-white via-gray-500 to-white dark:from-[#131720] dark:via-slate-500 dark:to-[#131720] w-full h-[1px] my-8" />
         <div className="flex flex-col">
           <h4 className="text-center text-lg ">آثار این هنرمند</h4>
           <div className="flex justify-center items-center mt-3">

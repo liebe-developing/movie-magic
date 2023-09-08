@@ -17,6 +17,8 @@ export default {
       backgroundImage: {
         hero: "url('/src/assets/images/bg-hero.avif')",
         moviePageBg: "url('/src/assets/images/movie-page-bg.jpg')",
+        seriesPageBg: "url('/src/assets/images/series-page-bg.jpg')",
+        contactPageBg: "url('/src/assets/images/contact-page-bg.jpg')",
         signinBg: "url('/src/assets/images/signin-bg.jpg')",
         signinBg2: "url('/src/assets/images/signin-bg2.jpg')",
       },

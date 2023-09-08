@@ -36,7 +36,7 @@ const UpcomingMovies = ({ upcomingMovies }) => {
           },
         }}
         modules={[Navigation]}
-        className="flex items-center justify-center py-[30px]"
+        className="flex items-center justify-center py-[30px] max-sm:mx-2"
       >
         {upcomingMovies?.map((movie) => (
           <SwiperSlide key={movie.id}>

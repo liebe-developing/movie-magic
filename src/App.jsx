@@ -8,6 +8,7 @@ import {
 import RootLayout from "./layouts/RootLayout";
 import {
   ActorDetails,
+  Contact,
   ForgotPassword,
   Home,
   MoviePage,
@@ -32,6 +33,7 @@ const router = createBrowserRouter(
       <Route path="/upcoming-movies" element={<UpcomingMoviesList />} />
       <Route path="/popular-series" element={<PopularSeriesList />} />
       <Route path="/actor/:id" element={<ActorDetails />} />
+      <Route path="/contact" element={<Contact />} />
     </Route>
   )
 );

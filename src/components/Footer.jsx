@@ -49,7 +49,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="font-vazir">
+            <div className="font-vazir max-sm:text-sm">
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 قوانین
               </h2>
@@ -67,7 +67,7 @@ const Footer = () => {
                     to="#"
                     className="hover:text-orange-500 transition ease-in-out duration-200"
                   >
-                    شرایط &amp; مقررات سرویس‌دهی
+                    شرایط و مقررات سرویس‌دهی
                   </Link>
                 </li>
               </ul>

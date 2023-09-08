@@ -12,7 +12,7 @@ import { HeroMovieCard, Spinner } from "../components";
 
 const Hero = ({ trendingMovies, isLoading, error }) => {
   return (
-    <div className={`py-[50px] max-w-7xl mx-auto relative`}>
+    <div className={`py-[50px] max-w-7xl mx-auto relative max-sm:px-1`}>
       {isLoading && (
         <h1 className="text-white flex items-center justify-between text-center">
           <Spinner />
@@ -47,7 +47,7 @@ const Hero = ({ trendingMovies, isLoading, error }) => {
           {trendingMovies?.map((movie) => (
             <SwiperSlide
               key={movie.id}
-              className="bg-center bg-cover sm:w-[700px] h-[590px]"
+              className="bg-center bg-cover sm:w-[700px] sm:h-[590px]"
             >
               <HeroMovieCard movie={movie} />
             </SwiperSlide>

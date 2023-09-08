@@ -63,9 +63,9 @@ const MoviePage = () => {
 
   return (
     <section
-      className={`h-auto w-full bg-white dark:bg-hero bg-bottom bg-cover bg-no-repeat opacity-90 shadow-black`}
+      className={`h-auto w-full bg-white dark:bg-hero bg-bottom bg-cover bg-no-repeat shadow-black`}
     >
-      <div className="flex max-w-7xl mx-auto pt-[100px] pb-4 items-center text-sm relative font-iransans dark:text-white max-sm:pr-10">
+      <div className="flex sm:max-w-7xl mx-auto pt-[100px] pb-4 items-center text-sm relative font-iransans dark:text-white max-sm:pr-10">
         <Link to={"/"}>مووی مجیک</Link>
         <RiArrowLeftSLine className="w-4 h-4" />
         <p>
@@ -76,12 +76,12 @@ const MoviePage = () => {
         </p>
       </div>
       <div
-        className={`max-sm:flex flex-col sm:h-[700px] bg-no-repeat w-full bg-center bg-cover`}
+        className={`max-sm:flex flex-col sm:h-[800px] bg-no-repeat w-full bg-center bg-cover`}
         style={{
           backgroundImage: `url(https://image.tmdb.org/t/p/original/${state.backdrop_path})`,
         }}
       >
-        <div className="flex flex-col md:flex-row px-[119px] h-auto pt-8 sm:h-[700px] backdrop-brightness-[0.4] gap-7">
+        <div className="flex flex-col md:flex-row px-5 sm:px-[119px] h-auto pt-8 sm:h-[800px] backdrop-brightness-[0.3] gap-7">
           <div>
             <img
               src={`https://image.tmdb.org/t/p/original/${state?.poster_path}`}
@@ -116,7 +116,7 @@ const MoviePage = () => {
                 </div>
               </div>
             </div>
-            <div className="grid sm:grid-cols-2 sm:gap-x-28 sm:gap-y-7 text-[13px]">
+            <div className="grid gap-y-4 sm:grid-cols-2 sm:gap-x-28 sm:gap-y-7 text-[13px]">
               {movieInfo.map((item, index) => (
                 <p
                   key={index}
@@ -134,48 +134,52 @@ const MoviePage = () => {
                 </p>
               ))}
             </div>
-            <p className="text-white text-[13px] text-justify">
+            <p className="text-white text-[13px] text-justify leading-7">
               جاش و دالتون لمبرت برای اینکه بتوانند شیاطین را یکبار برای همیشه
               ساکت کنند، باید به خانه‌ی قدیمی خود بازگردند و با گذشته‌ی تاریک
               خانواده خود روبه‌رو شوند.
             </p>
           </div>
         </div>
-        <div className="bg-white dark:bg-[#060606] pt-16 ">
-          <h2 className="dark:text-white text-primary font-vazir font-semibold sm:px-[119px] text-2xl">
-            بازیگران
-          </h2>
-          <Swiper
-            navigation={true}
-            loop
-            breakpoints={{
-              375: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-              640: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 4,
-                spaceBetween: 17,
-              },
-              1024: {
-                slidesPerView: 6,
-                spaceBetween: 17,
-              },
-            }}
-            modules={[Navigation]}
-            className="flex items-center justify-center py-[30px] sm:mx-[119px]"
-          >
-            {actors?.map((actor) => (
-              <SwiperSlide key={actor.id}>
-                <ActorCard actor={actor} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+      </div>
+      <div className="bg-white dark:bg-[#060606] py-8">
+        <h2 className="dark:text-white text-primary font-vazir font-semibold sm:px-[119px] px-4 text-2xl">
+          بازیگران
+        </h2>
+        <Swiper
+          navigation={true}
+          loop
+          breakpoints={{
+            300: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            375: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 17,
+            },
+            1024: {
+              slidesPerView: 6,
+              spaceBetween: 17,
+            },
+          }}
+          modules={[Navigation]}
+          className="flex items-center justify-center py-[30px] sm:mx-[119px] max-sm:mx-4"
+        >
+          {actors?.map((actor) => (
+            <SwiperSlide key={actor.id}>
+              <ActorCard actor={actor} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

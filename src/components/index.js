@@ -5,6 +5,7 @@ import SectionMovieCard from "./SectionMovieCard";
 import DarkModeButton from "./DarkModeButton";
 import MovieSectionContainer from "./MovieSectionContainer";
 import ActorCard from "./ActorCard";
+import ContactForm from "./ContactForm";
 
 export {
   Navbar,
@@ -14,4 +15,5 @@ export {
   MovieSectionContainer,
   SectionMovieCard,
   ActorCard,
+  ContactForm,
 };

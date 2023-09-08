@@ -9,7 +9,6 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 const Navbar = ({ theme, setTheme }) => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
@@ -35,7 +34,7 @@ const Navbar = ({ theme, setTheme }) => {
     <header
       className={`${
         scrolled
-          ? "dark:bg-hero bg-no-repeat bg-cover bg-white shadow-xl"
+          ? "bg-white dark:bg-[#060606] dark:shadow-sm dark:shadow-zinc-900"
           : "bg-transparent"
       } w-full flex py-2 fixed top-0 z-20 select-none max-lg:px-5`}
     >
@@ -59,26 +58,25 @@ const Navbar = ({ theme, setTheme }) => {
         <div className="flex items-center justify-between max-lg:hidden">
           <nav className="flex items-center dark:text-slate-200 text-primary gap-10 font-iransans">
             {navLinks.map((link) => (
-              <div
-                key={link.engLabel}
-                className="flex items-center justify-center gap-1.5 cursor-pointer group"
-              >
-                <link.Icon className="w-6 h-6 group-hover:transition duration-500 ease-in-out transform group-hover:scale-110 text-orange-500" />
-                <div className="leading-normal text-[13px]">
-                  <p
-                    className={`${
-                      pathMatchRoute("/sign-in") ||
-                      pathMatchRoute("/sign-up") ||
-                      pathMatchRoute("/forgot-password")
-                        ? "text-slate-200"
-                        : "text-primary"
-                    } font-iransans dark:text-slate-200`}
-                  >
-                    {link.persianLabel}
-                  </p>
-                  <p className="uppercase text-orange-500">{link.engLabel}</p>
+              <Link to={link.href} key={link.engLabel}>
+                <div className="flex items-center justify-center gap-1.5 cursor-pointer group">
+                  <link.Icon className="w-6 h-6 group-hover:transition duration-500 ease-in-out transform group-hover:scale-110 text-orange-500" />
+                  <div className="leading-normal text-[13px]">
+                    <p
+                      className={`${
+                        pathMatchRoute("/sign-in") ||
+                        pathMatchRoute("/sign-up") ||
+                        pathMatchRoute("/forgot-password")
+                          ? "text-slate-200"
+                          : "text-primary"
+                      } font-iransans dark:text-slate-200`}
+                    >
+                      {link.persianLabel}
+                    </p>
+                    <p className="uppercase text-orange-500">{link.engLabel}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </nav>
         </div>
@@ -107,29 +105,33 @@ const Navbar = ({ theme, setTheme }) => {
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
-                <div
-                  key={link.engLabel}
-                  className="flex items-center justify-center gap-1.5 cursor-pointer group"
-                >
-                  <link.Icon className="w-6 h-6 group-hover:transition duration-500 ease-in-out transform group-hover:scale-110 text-orange-500" />
+                <Link to={link.href} key={link.engLabel}>
                   <div
-                    className="leading-normal text-[13px]"
-                    onClick={() => setToggle(!toggle)}
+                    key={link.engLabel}
+                    className="flex items-center justify-center gap-1.5 cursor-pointer group"
                   >
-                    <p
-                      className={`${
-                        pathMatchRoute("/sign-in") ||
-                        pathMatchRoute("/sign-up") ||
-                        pathMatchRoute("/forgot-password")
-                          ? "text-slate-200"
-                          : "text-primary"
-                      } font-iransans dark:text-slate-200`}
+                    <link.Icon className="w-6 h-6 group-hover:transition duration-500 ease-in-out transform group-hover:scale-110 text-orange-500" />
+                    <div
+                      className="leading-normal text-[13px]"
+                      onClick={() => setToggle(!toggle)}
                     >
-                      {link.persianLabel}
-                    </p>
-                    <p className="uppercase text-orange-500">{link.engLabel}</p>
+                      <p
+                        className={`${
+                          pathMatchRoute("/sign-in") ||
+                          pathMatchRoute("/sign-up") ||
+                          pathMatchRoute("/forgot-password")
+                            ? "text-slate-200"
+                            : "text-primary"
+                        } font-iransans dark:text-slate-200`}
+                      >
+                        {link.persianLabel}
+                      </p>
+                      <p className="uppercase text-orange-500">
+                        {link.engLabel}
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </ul>
             <div className="flex flex-col items-start justify-start gap-1.5">
