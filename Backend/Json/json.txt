@@ -1,0 +1,91 @@
+
+Category
+[
+    {
+        "id": 2,
+        "title": "اکشن",
+        "slug": "action",
+        "created_at": "2023-09-15T11:15:00.561075Z",
+        "updated_at": "2023-09-15T11:15:00.561075Z"
+    }
+]
+
+
+Director
+[
+    {
+        "id": 2,
+        "name": "Matthew Perry",
+        "slug": "matthew-perry",
+        "image": "http://127.0.0.1:8000/media/images/director_image/Screenshot_2022-08-13_173107.png",
+        "created_at": "2023-09-15T11:20:11.103806Z",
+        "updated_at": "2023-09-15T11:20:11.103806Z"
+    }
+]
+
+Video
+{
+    "id": 2,
+    "title": "قسمت سه friends",
+    "description": "xfdmgfhyguhjhgygygjghgdtf,,",
+    "image": "http://127.0.0.1:8000/media/images/video_image/Screenshot_2022-08-13_173107.png",
+    "video": "http://127.0.0.1:8000/media/videos/Instagram_like_green_screen_video.mp4",
+    "age": "14",
+    "time": "120",
+    "created_at": "2023-09-15T11:21:33.087648Z",
+    "updated_at": "2023-09-15T11:21:33.087648Z",
+    "slug": "friends3",
+    "director": 2,
+    "category": [
+        2
+    ],
+    "actors": [
+        4
+    ]
+}
+
+
+
+Actor
+[
+    {
+        "id": 4,
+        "name": "Matthew Perry",
+        "slug": "matthewperry",
+        "image": null,
+        "created_at": "2023-09-15T11:19:14.539708Z",
+        "updated_at": "2023-09-15T11:19:14.539708Z"
+    }
+]
+
+
+
+Serial
+{
+    "id": 1,
+    "name": "friends",
+    "image": "http://127.0.0.1:8000/media/serial/Screenshot_2022-08-13_173107.png",
+    "slug": "friends",
+    "created_at": "2023-09-15T11:24:15.224537Z",
+    "age": "14",
+    "year": 1980,
+    "number_part": 20,
+    "video": [
+        2
+    ]
+}
+
+
+Season
+{
+    "id": 1,
+    "name": "2",
+    "subject": "cool",
+    "image": "http://127.0.0.1:8000/media/serial/season/Screenshot_2022-08-13_173107.png",
+    "slug": "2",
+    "created_at": "2023-09-15T11:25:33.950159Z",
+    "season": 1,
+    "video": [
+        2
+    ]
+}
